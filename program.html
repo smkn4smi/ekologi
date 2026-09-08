@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Inovasi Pirolisis - Ekologi SMKN 4 Sukabumi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --eco-dark: #1b4332;
+            --eco-primary: #2d6a4f;
+            --eco-accent: #52b788;
+            --eco-light: #d8f3dc;
+            --bg-soft: #f8f9fa;
+        }
 
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+            background-color: var(--bg-soft);
+        }
+
+        /* Navbar */
+        .navbar-eco {
+            background-color: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--eco-dark) !important;
+        }
+
+        /* Hero Mini */
+        .hero-mini {
+            background: linear-gradient(rgba(27, 67, 50, 0.90), rgba(45, 106, 79, 0.90)), 
+                        url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: white;
+            padding: 70px 0 80px;
+        }
+
+        /* Process Steps */
+        .step-card {
+            border: none;
+            border-radius: 15px;
+            background: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+            position: relative;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .step-number {
+            width: 45px;
+            height: 45px;
+            background-color: var(--eco-accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Benefit Cards */
+        .icon-box-large {
+            width: 70px;
+            height: 70px;
+            background-color: var(--eco-light);
+            color: var(--eco-dark);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: var(--eco-dark);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-eco sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-leaf text-success me-2 fs-4"></i>
+                <span>EKOLOGI SMKN 4</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="program.html">Program Inovasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dampak.html">Dampak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION MINI -->
+    <section class="hero-mini text-center">
+        <div class="container">
+            <span class="badge bg-light text-success px-3 py-2 rounded-pill fw-semibold mb-2">Inovasi Teknologi Terapan</span>
+            <h1 class="fw-bold display-5 mb-2">Teknologi Pirolisis Plastik</h1>
+            <p class="lead mb-0 text-white-50">Mengubah Sampah Plastik Menjadi Bahan Bakar Cair Alternatif Berkelanjutan</p>
+        </div>
+    </section>
+
+    <!-- PENJELASAN PIROLISIS -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80" alt="Reaktor Pirolisis" class="img-fluid rounded-4 shadow-sm">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-semibold mb-2">Apa Itu Pirolisis?</span>
+                    <h2 class="fw-bold mb-3">Solusi Cerdas Pengolahan Sampah Anorganik</h2>
+                    <p class="text-secondary leading-relaxed">
+                        <strong>Pirolisis</strong> adalah proses dekomposisi termal bahan organik atau plastik melalui pemanasan suhu tinggi (300°C – 500°C) tanpa melibatkan oksigen. Melalui proses ini, rantai polimer plastik yang sulit terurai diputus secara kimiawi dan diubah menjadi uap hidrokarbon.
+                    </p>
+                    <p class="text-secondary leading-relaxed mb-4">
+                        Di SMK Negeri 4 Sukabumi, inovasi reaktor pirolisis dimanfaatkan oleh siswa dan guru untuk mengolah sampah plastik jenis <em>Polyethylene (PE)</em> dan <em>Polypropylene (PP)</em>—seperti kantong kresek dan botol plastik bekas—menjadi cairan bahan bakar setara solar dan bensin cair.
+                    </p>
+                    <div class="p-3 bg-white border-start border-4 border-success rounded shadow-sm">
+                        <small class="text-muted d-block fw-semibold text-uppercase">Tujuan Riset Inovasi</small>
+                        <span class="fw-bold text-dark">Menciptakan ekosistem *Zero Plastic Waste* di lingkungan sekolah sekaligus sarana pembelajaran teknologi terapan bagi peserta didik.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAHAPAN PROSES PIROLISIS -->
+    <section class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">Alur Kerja</h6>
+                <h2 class="fw-bold">4 Tahapan Konversi Pirolisis</h2>
+                <p class="text-muted">Proses otomatisasi dari sampah plastik mentah hingga menghasilkan bahan bakar cair.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- TAHAP 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card step-card p-4 h-100">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold mb-2">Pencacahan Plastik</h5>
+                        <p class="text-muted small mb-0">Sampah plastik dibersihkan, dikeringkan, dan dicacah menjadi ukuran kecil agar proses pemanasan dalam reaktor berlangsung merata.</p>
+                    </div>
+                </div>
+
+                <!-- TAHAP 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card step-card p-4 h-100">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold mb-2">Pemanasan Kedap Udara</h5>
+                        <p class="text-muted small mb-0">Cacahan plastik dimasukkan ke dalam tabung reaktor hermetis (tanpa udara) lalu dipanaskan hingga mencapai suhu terukur.</p>
+                    </div>
+                </div>
+
+                <!-- TAHAP 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card step-card p-4 h-100">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold mb-2">Kondensasi (Pengembunan)</h5>
+                        <p class="text-muted small mb-0">Uap gas hidrokarbon hasil pemanasan dialirkan melalui pipa pendingin (kondensor) hingga mengembun menjadi fase cair.</p>
+                    </div>
+                </div>
+
+                <!-- TAHAP 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card step-card p-4 h-100">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-bold mb-2">Pemisahan Hasil BBM</h5>
+                        <p class="text-muted small mb-0">Minyak cair ditampung dan disaring untuk dimanfaatkan sebagai bahan bakar mesin pemotong rumput dan alat praktikum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HASIL PRODUK & MANFAAT -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">Manfaat Inovasi</h6>
+                <h2 class="fw-bold">Dampak Positif Pirolisis Sekolah</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 p-4 h-100 shadow-sm rounded-4 bg-white text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-box-large">
+                                <i class="fa-solid fa-gas-pump"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-2">Energi Alternatif</h4>
+                        <p class="text-muted">Menghasilkan BBM cair yang dapat mengurangi ketergantungan pada bahan bakar fosil komersial untuk operasional sekolah.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 p-4 h-100 shadow-sm rounded-4 bg-white text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-box-large">
+                                <i class="fa-solid fa-trash-can-arrow-up"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-2">Reduksi Sampah</h4>
+                        <p class="text-muted">Mengatasi masalah kantong plastik kresek dan kemasan yang sulit didaur ulang oleh bank sampah konvensional.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 p-4 h-100 shadow-sm rounded-4 bg-white text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-box-large">
+                                <i class="fa-solid fa-flask-vial"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-2">Media Riset Siswa</h4>
+                        <p class="text-muted">Menjadi laboratorium terbuka bagi siswa SMK untuk mempelajari termodinamika, rekayasa mesin, dan kimia lingkungan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-dark">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1"><i class="fa-solid fa-leaf text-success me-2"></i>EKOLOGI SMKN 4 SUKABUMI</h5>
+                    <small class="text-white-50">Menjaga Bumi, Membangun Masa Depan Berkelanjutan.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-white-50">&copy; 2026 SMK Negeri 4 Sukabumi. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
