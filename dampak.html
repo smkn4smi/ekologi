@@ -1,1 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri & Dampak - Ekologi SMKN 4 Sukabumi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --eco-dark: #1b4332;
+            --eco-primary: #2d6a4f;
+            --eco-accent: #52b788;
+            --eco-light: #d8f3dc;
+            --bg-soft: #f8f9fa;
+        }
 
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+            background-color: var(--bg-soft);
+        }
+
+        /* Navbar */
+        .navbar-eco {
+            background-color: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--eco-dark) !important;
+        }
+
+        /* Hero Mini */
+        .hero-mini {
+            background: linear-gradient(rgba(27, 67, 50, 0.90), rgba(45, 106, 79, 0.90)), 
+                        url('https://images.unsplash.com/photo-1511497584788-8767611136f6?auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: white;
+            padding: 70px 0 80px;
+        }
+
+        /* Gallery Card Customization */
+        .gallery-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            height: 230px;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-card:hover .img-container img {
+            transform: scale(1.08);
+        }
+        .badge-date {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(27, 67, 50, 0.85);
+            color: white;
+            font-size: 0.75rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+        footer {
+            background-color: var(--eco-dark);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-eco sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-leaf text-success me-2 fs-4"></i>
+                <span>EKOLOGI SMKN 4</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="program.html">Program Inovasi</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="dampak.html">Dampak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION MINI -->
+    <section class="hero-mini text-center">
+        <div class="container">
+            <span class="badge bg-light text-success px-3 py-2 rounded-pill fw-semibold mb-2">Dokumentasi & Aksi Nyata</span>
+            <h1 class="fw-bold display-5 mb-2">Album Rekam Aksi Ekologi</h1>
+            <p class="lead mb-0 text-white-50">Kumpulan Foto Dokumentasi Kegiatan & Dampak Positif Lingkungan Sekolah</p>
+        </div>
+    </section>
+
+    <!-- GALERI ALBUM FOTO -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">Galeri Dokumentasi</h6>
+                <h2 class="fw-bold">Aktivitas & Hasil Gerakan Hijau</h2>
+                <p class="text-muted">Potret semangat warga sekolah dalam menjaga keberlanjutan lingkungan hidup.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- FOTO 1: PIROLISIS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Uji Coba Pirolisis">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Aksi Pirolisis</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Uji Coba Reaktor Pirolisis Plastik</h5>
+                            <p class="text-muted small mb-0">Praktikum pengolahan limbah plastik kemasan menjadi bahan bakar cair cair cair bersama siswa jurusan teknik.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 2: PENANAMAN POHON -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Penanaman Pohon">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Penghijauan</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Aksi Tanam 100 Bibit Pohon</h5>
+                            <p class="text-muted small mb-0">Kegiatan penghijauan area terbuka hijau sekolah untuk memperbanyak resapan air dan keteduhan lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 3: BANK SAMPAH -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80" alt="Pemilahan Sampah">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Bank Sampah</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Pemilahan Sampah Anorganik</h5>
+                            <p class="text-muted small mb-0">Petugas kader lingkungan melakukan pemilahan rutin botol dan plastik sebelum disalurkan ke bank sampah.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 4: KOMPOSTING ORGANIK -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Pembuatan Kompos">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Komposting</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Pengolahan Kompos Daun Kering</h5>
+                            <p class="text-muted small mb-0">Pemanfaatan sampah organik dedaunan dari area kebun menjadi pupuk kompos alami untuk tanaman sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 5: TAMAN HYDROPONIK -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Kebun Hidroponik">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Hidroponik</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Panen Sayur Hidroponik Sekolah</h5>
+                            <p class="text-muted small mb-0">Hasil budidaya tanaman hijau ramah lingkungan memanfaatkan ruang vertikal dan efisiensi pemakaian air.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 6: SOSIALISASI & WORKSHOP -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card gallery-card h-100">
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Edukasi Siswa">
+                            <span class="badge-date"><i class="fa-regular fa-calendar-check me-1"></i>Edukasi</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-2">Sosialisasi Budaya Zero Waste</h5>
+                            <p class="text-muted small mb-0">Edukasi berkala bagi siswa baru tentang pentingnya mengurangi penggunaan plastik sekali pakai di kantin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-dark">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1"><i class="fa-solid fa-leaf text-success me-2"></i>EKOLOGI SMKN 4 SUKABUMI</h5>
+                    <small class="text-white-50">Menjaga Bumi, Membangun Masa Depan Berkelanjutan.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-white-50">&copy; 2026 SMK Negeri 4 Sukabumi. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
