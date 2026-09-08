@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi & Dokumen - Ekologi SMKN 4 Sukabumi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --eco-dark: #1b4332;
+            --eco-primary: #2d6a4f;
+            --eco-accent: #52b788;
+            --eco-light: #d8f3dc;
+            --bg-soft: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+            background-color: var(--bg-soft);
+        }
+
+        /* Navbar */
+        .navbar-eco {
+            background-color: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--eco-dark) !important;
+        }
+
+        /* Hero Mini */
+        .hero-mini {
+            background: linear-gradient(rgba(27, 67, 50, 0.90), rgba(45, 106, 79, 0.90)), 
+                        url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: white;
+            padding: 70px 0 80px;
+        }
+
+        /* Doc Card */
+        .doc-card {
+            border: none;
+            border-radius: 15px;
+            background: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .doc-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+        .icon-pdf { background-color: #ffebee; color: #d32f2f; }
+        .icon-ppt { background-color: #fff3e0; color: #e65100; }
+        .icon-xls { background-color: #e8f5e9; color: #2e7d32; }
+
+        .btn-download {
+            background-color: var(--eco-light);
+            color: var(--eco-dark);
+            font-weight: 600;
+            border-radius: 25px;
+            padding: 8px 18px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-download:hover {
+            background-color: var(--eco-accent);
+            color: white;
+        }
+
+        footer {
+            background-color: var(--eco-dark);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-eco sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-leaf text-success me-2 fs-4"></i>
+                <span>EKOLOGI SMKN 4</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="program.html">Program Inovasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dampak.html">Dampak</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="materi.html">Materi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION MINI -->
+    <section class="hero-mini text-center">
+        <div class="container">
+            <span class="badge bg-light text-success px-3 py-2 rounded-pill fw-semibold mb-2">Pusat Unduhan</span>
+            <h1 class="fw-bold display-5 mb-2">Materi & Dokumen Edukasi</h1>
+            <p class="lead mb-0 text-white-50">Unduh Modul Ajar, Panduan Praktikum, dan Media Presentasi Ekologi</p>
+        </div>
+    </section>
+
+    <!-- DAFTAR DOKUMEN -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">Bahan Ajar Siswa</h6>
+                <h2 class="fw-bold">Kumpulan Berkas Pembelajaran</h2>
+                <p class="text-muted">Silakan unduh dokumen yang dibutuhkan untuk kegiatan pembelajaran dan riset mandiri.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- DOKUMEN 1 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">PDF • 2,4 MB</span>
+                                <h5 class="fw-bold mb-1">Modul Ajar Pirolisis Plastik</h5>
+                                <p class="text-muted small mb-3">Panduan prinsip kerja, skema alat reaktor, dan prosedur keselamatan praktikum pengolahan plastik.</p>
+                                <a href="file/modul-pirolisis.pdf" download class="btn-download btn-sm">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOKUMEN 2 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">PDF • 1,8 MB</span>
+                                <h5 class="fw-bold mb-1">Panduan Operasional Bank Sampah</h5>
+                                <p class="text-muted small mb-0">Petunjuk teknis pemilahan jenis sampah anorganik dan tata cara penimbangan bagi kader siswa.</p>
+                                <a href="file/panduan-bank-sampah.pdf" download class="btn-download btn-sm mt-3">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOKUMEN 3 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-ppt">
+                                <i class="fa-solid fa-file-powerpoint"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">PPTX • 5,1 MB</span>
+                                <h5 class="fw-bold mb-1">Slide Edukasi Gerakan Zero Waste</h5>
+                                <p class="text-muted small mb-3">Materi presentasi sosialisasi pengurangan limbah plastik sekali pakai di lingkungan kantin.</p>
+                                <a href="file/presentasi-zero-waste.pptx" download class="btn-download btn-sm">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOKUMEN 4 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">PDF • 3,2 MB</span>
+                                <h5 class="fw-bold mb-1">Jurnal Riset BBM Hasil Pirolisis</h5>
+                                <p class="text-muted small mb-3">Laporan hasil pengujian nilai kalor dan viskositas minyak hasil konversi limbah plastik.</p>
+                                <a href="file/jurnal-riset-pirolisis.pdf" download class="btn-download btn-sm">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOKUMEN 5 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-xls">
+                                <i class="fa-solid fa-file-excel"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">XLSX • 450 KB</span>
+                                <h5 class="fw-bold mb-1">Form Pencatatan Sampah Harian</h5>
+                                <p class="text-muted small mb-3">Template lembar kerja Microsoft Excel untuk mencatat bobot sampah terkelola di tiap kelas.</p>
+                                <a href="file/form-pencatatan-sampah.xlsx" download class="btn-download btn-sm">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DOKUMEN 6 -->
+                <div class="col-md-6">
+                    <div class="card doc-card p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="doc-icon icon-pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary opacity-75 mb-1">PDF • 1,2 MB</span>
+                                <h5 class="fw-bold mb-1">Panduan Pembuatan Kompos Organik</h5>
+                                <p class="text-muted small mb-3">Langkah demi langkah pembuatan pupuk kompos dari sampah daun dan sisa makanan kantin.</p>
+                                <a href="file/panduan-komposting.pdf" download class="btn-download btn-sm">
+                                    <i class="fa-solid fa-download"></i> Unduh Berkas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-dark">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1"><i class="fa-solid fa-leaf text-success me-2"></i>EKOLOGI SMKN 4 SUKABUMI</h5>
+                    <small class="text-white-50">Menjaga Bumi, Membangun Masa Depan Berkelanjutan.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-white-50">&copy; 2026 SMK Negeri 4 Sukabumi. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
